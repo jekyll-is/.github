@@ -2,19 +2,19 @@
 
 ```mermaid
 graph BT
-  ial[is-ial-parser (80%)]
-  kramdown[is-kramdown-hooked (0%)]
-  images[jekyll-is-images (0%)] --> ial
+  ial["is-ial-parser (80%)"]
+  kramdown["is-kramdown-hooked (0%)"]
+  images["jekyll-is-images (0%)"] --> ial
   images --> kramdown
-  announcer[jekyll-is-announcer (0%)] --> meta
-  pdf[jekyll-is-pdf (0%)] --> images
-  meta[jekyll-is-meta (0%)] --> images
-  feed[jekyll-is-feed (0%)] --> meta
-  span[jekyll-is-span (0%)] --> ial
-  index[jekyll-is-index (0%)] --> span
+  announcer["jekyll-is-announcer (0%)"] --> meta
+  pdf["jekyll-is-pdf (0%)"] --> images
+  meta["jekyll-is-meta (0%)"] --> images
+  feed["jekyll-is-feed (0%)"] --> meta
+  span["jekyll-is-span (0%)"] --> ial
+  index["jekyll-is-index (0%)"] --> span
   span --> kramdown
-  tocs[jekyll-is-tocs (0%)] --> kramdown
-  robots[jekyll-is-robots (0%)]
+  tocs["jekyll-is-tocs (0%)"] --> kramdown
+  robots["jekyll-is-robots (0%)"]
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
