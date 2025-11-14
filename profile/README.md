@@ -2,8 +2,10 @@
 
 ```mermaid
 graph BT
-  images[jekyll-is-images] --> ial[is-ial-parser]
-  images --> kramdown[is-kramdown-hooked]
+  ial[is-ial-parser]
+  kramdown[is-kramdown-hooked]
+  images[jekyll-is-images] --> ial
+  images --> kramdown
   announcer[jekyll-is-announcer] --> meta
   pdf[jekyll-is-pdf] --> images
   meta[jekyll-is-meta] --> images
