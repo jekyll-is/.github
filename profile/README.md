@@ -27,4 +27,19 @@ click tocs "https://github.com/jekyll-is/jekyll-is-tocs"
 click feed "https://github.com/jekyll-is/jekyll-is-feed"
 click index "https://github.com/jekyll-is/jekyll-is-index"
 click span "https://github.com/jekyll-is/jekyll-is-span"
+
+classDef green fill:#DFD
+classDef gray fill:#EEE
+
+class ial green
+class kramdown gray
+class images gray
+class announcer gray
+class pdf gray
+class span gray
+class index gray
+class feed gray
+class meta gray
+class robots gray
+class tocs gray
 ```
