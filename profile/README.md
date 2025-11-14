@@ -4,6 +4,7 @@
 graph BT
   ial["is-ial-parser (80%)"]
   kramdown["is-kramdown-hooked (0%)"]
+  tocs["jekyll-is-tocs (0%)"] --> kramdown
   images["jekyll-is-images (0%)"] --> ial
   images --> kramdown
   announcer["jekyll-is-announcer (0%)"] --> meta
@@ -13,7 +14,6 @@ graph BT
   span["jekyll-is-span (0%)"] --> ial
   index["jekyll-is-index (0%)"] --> span
   span --> kramdown
-  tocs["jekyll-is-tocs (0%)"] --> kramdown
   robots["jekyll-is-robots (0%)"]
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
