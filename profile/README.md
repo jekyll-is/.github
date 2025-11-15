@@ -44,3 +44,11 @@ class meta gray
 class robots gray
 class tocs gray
 ```
+
+## Gems
+
+| name | description | license | version |
+|------|-------------|---------|---------|
+| [is-ial-parser](https://github.com/jekyll-is/is-ial-parser) | Universal Inline Attribute List (IAL) parser for Kramdown and Jekyll plugins | [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-ial-parser)](LICENSE) | [![Gem Version](https://badge.fury.io/rb/is-ial-parser.svg?icon=si%3Arubygems)](https://badge.fury.io/rb/is-ial-parser) |
+
+
