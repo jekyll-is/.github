@@ -2,7 +2,7 @@
 
 ```mermaid
 graph BT
-  ial["is-ial-parser (80%)"]
+  ial["is-ial-parser v0.8.0"]
   kramdown["is-kramdown-hooked (0%)"]
   tocs["jekyll-is-tocs (0%)"] --> kramdown
   images["jekyll-is-images (0%)"] --> ial
@@ -30,9 +30,10 @@ click span "https://github.com/jekyll-is/jekyll-is-span"
 
 classDef green fill:#DFD
 classDef gray fill:#EEE
+classDef blue fill:#DDF
 
-class ial green
-class kramdown gray
+class ial blue
+class kramdown green
 class images gray
 class announcer gray
 class pdf gray
