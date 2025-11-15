@@ -7,7 +7,7 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 ```mermaid
 graph BT
   ial["is-ial-parser v0.8.0"]
-  kramdown["is-kramdown-hooked (0%)"]
+  kramdown["is-kramdown-hooked v0.8.0"]
   tocs["jekyll-is-tocs (0%)"] --> kramdown
   images["jekyll-is-images (0%)"] --> ial
   images --> kramdown
@@ -37,9 +37,9 @@ classDef gray fill:#EEE
 classDef blue fill:#DDF
 
 class ial blue
-class kramdown green
+class kramdown blue
 class images gray
-class announcer gray
+class announcer green
 class pdf gray
 class span gray
 class index gray
@@ -58,7 +58,7 @@ Universal Inline Attribute List (IAL) parser for Kramdown and Jekyll plugins.
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-ial-parser)]([LICENSE](https://github.com/jekyll-is/is-ial-parser/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/is-ial-parser.svg)](https://badge.fury.io/rb/is-ial-parser)
 
-### ☑ [is-kramdown-hooked](https://github.com/jekyll-is/is-kramdown-hooked)
+### ✔ [is-kramdown-hooked](https://github.com/jekyll-is/is-kramdown-hooked)
 
 Extensible Kramdown parser with inner hooks for enhanced Markdown processing in Jekyll.
 
@@ -71,3 +71,5 @@ Announcing new blog posts (to Telegram channel).
 
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/jekyll-is-announcer)]([LICENSE](https://github.com/jekyll-is/jekyll-is-announcer/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/jekyll-is-announcer.svg)](https://badge.fury.io/rb/jekyll-is-announcer)
+
+<!-- ☑ -->
