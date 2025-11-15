@@ -60,7 +60,7 @@ Universal Inline Attribute List (IAL) parser for Kramdown and Jekyll plugins.
 
 ### ☑ [is-kramdown-hooked](https://github.com/jekyll-is/is-kramdown-hooked)
 
-Extensible Kramdown parser with inner hooks.
+Extensible Kramdown parser with inner hooks for enhanced Markdown processing in Jekyll.
 
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-kramdown-hooked)]([LICENSE](https://github.com/jekyll-is/is-kramdown-hooked/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/is-kramdown-hooked.svg)](https://badge.fury.io/rb/is-kramdown-hooked)
