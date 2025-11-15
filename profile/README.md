@@ -1,5 +1,9 @@
 # Jekyll IS
 
+Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST manipulations
+
+## Module Graph
+
 ```mermaid
 graph BT
   ial["is-ial-parser v0.8.0"]
