@@ -1,6 +1,6 @@
 # Jekyll IS
 
-Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST manipulations
+Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST manipulations.
 
 ## Module Graph
 
