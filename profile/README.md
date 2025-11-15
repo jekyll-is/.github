@@ -7,7 +7,7 @@ graph BT
   tocs["jekyll-is-tocs (0%)"] --> kramdown
   images["jekyll-is-images (0%)"] --> ial
   images --> kramdown
-  announcer["jekyll-is-announcer (0%)"] --> meta
+  announcer["jekyll-is-announcer (0%)"]
   pdf["jekyll-is-pdf (0%)"] --> images
   meta["jekyll-is-meta (0%)"] --> images
   feed["jekyll-is-feed (0%)"] --> meta
@@ -60,4 +60,11 @@ Extensible Kramdown parser with inner hooks.
 
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-kramdown-hooked)]([LICENSE](https://github.com/jekyll-is/is-kramdown-hooked/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/is-kramdown-hooked.svg)](https://badge.fury.io/rb/is-kramdown-hooked)
+
+### ☐ [jekyll-is-announcer](https://github.com/jekyll-is/jekyll-is-announcer)
+
+Announcing new blog posts (to Telegram channel).
+
+[![GitHub License](https://img.shields.io/github/license/jekyll-is/jekyll-is-announcer)]([LICENSE](https://github.com/jekyll-is/jekyll-is-announcer/blob/main/LICENSE))
+[![Gem Version](https://badge.fury.io/rb/jekyll-is-announcer.svg)](https://badge.fury.io/rb/jekyll-is-announcer)
 
