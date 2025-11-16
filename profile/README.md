@@ -8,21 +8,23 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 graph RL
   ial["is-ial-parser v0.8.0"]
   kramdown["is-kramdown-hooked v0.8.0"]
-  images["jekyll-is-images (0%)"] --> ial
-  images --> kramdown
-  pdf["jekyll-is-pdf (0%)"] --> images
+  statics["is-static-files (0%)"]
   span["jekyll-is-span (0%)"] --> ial
   span --> kramdown
   index["jekyll-is-index (0%)"] --> span
   abbr["jekyll-is-terms (0%)"] --> index
+  images["jekyll-is-images (0%)"] --> ial
+  images --> kramdown
+  images --> statics
   tocs["jekyll-is-tocs (0%)"] --> images
   tocs --> index
   meta["jekyll-is-meta (0%)"] --> images
   feed["jekyll-is-feed (0%)"] --> meta
   robots["jekyll-is-robots (0%)"]
-  announcer["jekyll-is-announcer (0%)"]
+  announcer["jekyll-is-announcer (0%)"] --> statics
   act-announce["action-announce (0%)"] --> announcer
   publish["action-jekyll-publish (0%)"] --> act-announce
+  pdf["jekyll-is-pdf (0%)"] --> images
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
@@ -38,6 +40,7 @@ click feed "https://github.com/jekyll-is/jekyll-is-feed"
 click index "https://github.com/jekyll-is/jekyll-is-index"
 click span "https://github.com/jekyll-is/jekyll-is-span"
 click abbr "https://github.com/jekyll-is/jekyll-is-terms"
+click statics "https://github.com/jekyll-is/is-static-files"
 
 classDef green fill:#DFD
 classDef gray fill:#EEE
@@ -57,6 +60,7 @@ class meta gray
 class robots gray
 class tocs gray
 class abbr gray
+class statics green
 ```
 
 ## Gems
