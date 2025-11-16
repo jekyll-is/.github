@@ -7,21 +7,58 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 ```mermaid
 graph BT
   ial["is-ial-parser v0.8.0"]
+  n0(( )) --> ial
+  n1(( )) --> n0
   kramdown["is-kramdown-hooked v0.8.0"]
-  tocs["jekyll-is-tocs (0%)"] --> kramdown
-  images["jekyll-is-images (0%)"] --> ial
-  images --> kramdown
+  n0 --> kramdown
+  images["jekyll-is-images (0%)"] --> n1
+  n3(( )) --> images
   pdf["jekyll-is-pdf (0%)"] --> images
-  meta["jekyll-is-meta (0%)"] --> images
-  feed["jekyll-is-feed (0%)"] --> meta
-  span["jekyll-is-span (0%)"] --> ial
+  span["jekyll-is-span (0%)"] --> n0
   index["jekyll-is-index (0%)"] --> span
-  span --> kramdown
+  abbr["jekyll-is-terms (0%)"] --> index
+  tocs["jekyll-is-tocs (0%)"] --> images
+  tocs --> index
+  meta["jekyll-is-meta (0%)"] --> n3
+  feed["jekyll-is-feed (0%)"] --> meta
   robots["jekyll-is-robots (0%)"]
   announcer["jekyll-is-announcer (0%)"]
   act-announce["action-announce (0%)"] --> announcer
   publish["action-jekyll-publish (0%)"] --> act-announce
-  publish --> pdf
+
+  subgraph core [Core]
+    ial
+    kramdown
+  end
+
+  subgraph middle [Middle]
+    span
+  end
+
+  subgraph content [Content]
+    subgraph struct [Structure]
+      index
+      abbr
+      tocs
+    end
+    images
+    pdf
+    n3
+  end
+
+  subgraph seo [SEO]
+
+    meta
+    feed
+    robots
+
+    subgraph announce [Announce]
+      announcer
+      act-announce
+    end
+
+  end
+
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
