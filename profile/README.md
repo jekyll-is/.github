@@ -26,7 +26,7 @@ graph BT
   act-announce["action-announce (0%)"] --> announcer
   publish["action-jekyll-publish (0%)"] --> act-announce
 
-  subgraph core [Core]
+  subgraph core [Background]
     ial
     kramdown
   end
