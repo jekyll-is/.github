@@ -5,13 +5,11 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 ## Module Graph
 
 ```mermaid
-graph BT
+graph RL
   ial["is-ial-parser v0.8.0"]
   kramdown["is-kramdown-hooked v0.8.0"]
-  n1(( )) --> ial
-  n1 --> kramdown
-  images["jekyll-is-images (0%)"] --> n1
-  n3(( )) --> images
+  images["jekyll-is-images (0%)"] --> ial
+  images --> kramdown
   pdf["jekyll-is-pdf (0%)"] --> images
   span["jekyll-is-span (0%)"] --> ial
   span --> kramdown
@@ -19,46 +17,12 @@ graph BT
   abbr["jekyll-is-terms (0%)"] --> index
   tocs["jekyll-is-tocs (0%)"] --> images
   tocs --> index
-  meta["jekyll-is-meta (0%)"] --> n3
+  meta["jekyll-is-meta (0%)"] --> images
   feed["jekyll-is-feed (0%)"] --> meta
   robots["jekyll-is-robots (0%)"]
   announcer["jekyll-is-announcer (0%)"]
   act-announce["action-announce (0%)"] --> announcer
   publish["action-jekyll-publish (0%)"] --> act-announce
-
-  subgraph core [Background]
-    ial
-    kramdown
-  end
-
-  subgraph middle [Middle]
-    span
-  end
-
-  subgraph content [Content]
-    subgraph struct [Structure]
-      index
-      abbr
-      tocs
-    end
-    images
-    pdf
-    n3
-  end
-
-  subgraph seo [SEO]
-
-    meta
-    feed
-    robots
-
-    subgraph announce [Announce]
-      announcer
-      act-announce
-    end
-
-  end
-
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
