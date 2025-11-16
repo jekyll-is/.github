@@ -11,7 +11,6 @@ graph BT
   tocs["jekyll-is-tocs (0%)"] --> kramdown
   images["jekyll-is-images (0%)"] --> ial
   images --> kramdown
-  announcer["jekyll-is-announcer (0%)"]
   pdf["jekyll-is-pdf (0%)"] --> images
   meta["jekyll-is-meta (0%)"] --> images
   feed["jekyll-is-feed (0%)"] --> meta
@@ -19,10 +18,16 @@ graph BT
   index["jekyll-is-index (0%)"] --> span
   span --> kramdown
   robots["jekyll-is-robots (0%)"]
+  announcer["jekyll-is-announcer (0%)"]
+  act-announce["action-announce (0%)"] --> announcer
+  publish["action-jekyll-publish (0%)"] --> act-announce
+  publish --> pdf
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
 click announcer "https://github.com/jekyll-is/jekyll-is-announcer"
+click act-announce "https://github.com/jekyll-is/action-announce"
+click publish "https://github.com/jekyll-is/action-jekyll-publish"
 click images "https://github.com/jekyll-is/jekyll-is-images"
 click robots "https://github.com/jekyll-is/jekyll-is-robots"
 click meta "https://github.com/jekyll-is/jekyll-is-meta"
@@ -40,6 +45,8 @@ class ial blue
 class kramdown blue
 class images gray
 class announcer green
+class act-announce green
+class publish gray
 class pdf gray
 class span gray
 class index gray
