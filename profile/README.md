@@ -73,6 +73,7 @@ click tocs "https://github.com/jekyll-is/jekyll-is-tocs"
 click feed "https://github.com/jekyll-is/jekyll-is-feed"
 click index "https://github.com/jekyll-is/jekyll-is-index"
 click span "https://github.com/jekyll-is/jekyll-is-span"
+click abbr "https://github.com/jekyll-is/jekyll-is-terms"
 
 classDef green fill:#DFD
 classDef gray fill:#EEE
@@ -91,6 +92,7 @@ class feed gray
 class meta gray
 class robots gray
 class tocs gray
+class abbr gray
 ```
 
 ## Gems
