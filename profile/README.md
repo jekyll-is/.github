@@ -7,14 +7,14 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 ```mermaid
 graph BT
   ial["is-ial-parser v0.8.0"]
-  n0(( )) --> ial
-  n1(( )) --> n0
   kramdown["is-kramdown-hooked v0.8.0"]
-  n0 --> kramdown
+  n1(( )) --> ial
+  n1 --> kramdown
   images["jekyll-is-images (0%)"] --> n1
   n3(( )) --> images
   pdf["jekyll-is-pdf (0%)"] --> images
-  span["jekyll-is-span (0%)"] --> n0
+  span["jekyll-is-span (0%)"] --> ial
+  span --> kramdown
   index["jekyll-is-index (0%)"] --> span
   abbr["jekyll-is-terms (0%)"] --> index
   tocs["jekyll-is-tocs (0%)"] --> images
