@@ -8,7 +8,7 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 graph RL
   ial["is-ial-parser v0.8.0"]
   kramdown["is-kramdown-hooked v0.8.0"]
-  statics["is-static-files (0%)"]
+  statics["is-static-files v0.8.0"]
   span["jekyll-is-span (0%)"] --> ial
   span --> kramdown
   index["jekyll-is-index (0%)"] --> span
@@ -60,7 +60,7 @@ class meta gray
 class robots gray
 class tocs gray
 class abbr gray
-class statics green
+class statics blue
 ```
 
 ## Gems
@@ -78,6 +78,13 @@ Extensible Kramdown parser with inner hooks for enhanced Markdown processing in 
 
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-kramdown-hooked)]([LICENSE](https://github.com/jekyll-is/is-kramdown-hooked/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/is-kramdown-hooked.svg)](https://badge.fury.io/rb/is-kramdown-hooked)
+
+### ✔ [is-static-files](https://github.com/jekyll-is/is-static-files)
+
+Custom StaticFile descendants for Jekyll.
+
+[![GitHub License](https://img.shields.io/github/license/jekyll-is/is-static-files)]([LICENSE](https://github.com/jekyll-is/is-static-files/blob/main/LICENSE))
+[![Gem Version](https://badge.fury.io/rb/is-static-files.svg)](https://badge.fury.io/rb/is-static-files)
 
 ### ☑ [jekyll-is-announcer](https://github.com/jekyll-is/jekyll-is-announcer)
 
