@@ -65,7 +65,9 @@ class statics blue
 
 ## Gems
 
-### ✔ [is-ial-parser](https://github.com/jekyll-is/is-ial-parser) 
+### Background utilities (not a plugins)
+
+#### ✔ [is-ial-parser](https://github.com/jekyll-is/is-ial-parser) 
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-ial-parser)]([LICENSE](https://github.com/jekyll-is/is-ial-parser/blob/main/LICENSE)) 
 [![Gem Version](https://badge.fury.io/rb/is-ial-parser.svg)](https://badge.fury.io/rb/is-ial-parser)
 
@@ -75,7 +77,7 @@ class statics blue
 It helps process attribute strings typically embedded in markdown or static site generators like Jekyll, enabling enhanced control over element attributes, 
 classes, IDs, and custom extensions.
 
-### ✔ [is-kramdown-hooked](https://github.com/jekyll-is/is-kramdown-hooked)
+#### ✔ [is-kramdown-hooked](https://github.com/jekyll-is/is-kramdown-hooked)
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-kramdown-hooked)]([LICENSE](https://github.com/jekyll-is/is-kramdown-hooked/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/is-kramdown-hooked.svg?d=1)](https://badge.fury.io/rb/is-kramdown-hooked)
 
@@ -85,7 +87,7 @@ classes, IDs, and custom extensions.
 to inject custom processing steps on the Abstract Syntax Tree (AST) after the default parsing, allowing for advanced Markdown manipulation and seamless integration 
 into Jekyll sites or other Ruby projects using Kramdown.
 
-### ✔ [is-static-files](https://github.com/jekyll-is/is-static-files)
+#### ✔ [is-static-files](https://github.com/jekyll-is/is-static-files)
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-static-files)]([LICENSE](https://github.com/jekyll-is/is-static-files/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/is-static-files.svg)](https://badge.fury.io/rb/is-static-files)
 
@@ -95,7 +97,9 @@ into Jekyll sites or other Ruby projects using Kramdown.
 that either come from a source file or from dynamic content held directly in memory. This flexibility enables programmatically generating or modifying static file content 
 during the Jekyll build process.
 
-### ☑ [jekyll-is-announcer](https://github.com/jekyll-is/jekyll-is-announcer)
+### Announcer
+
+#### ☑ [jekyll-is-announcer](https://github.com/jekyll-is/jekyll-is-announcer)
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/jekyll-is-announcer)]([LICENSE](https://github.com/jekyll-is/jekyll-is-announcer/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/jekyll-is-announcer.svg)](https://badge.fury.io/rb/jekyll-is-announcer)
 
