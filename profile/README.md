@@ -6,25 +6,25 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 
 ```mermaid
 graph RL
-  ial["is-ial-parser v0.8.0"]
-  kramdown["is-kramdown-hooked v0.8.0"]
-  statics["is-static-files v0.8.0"]
-  span["jekyll-is-span (0%)"] --> ial
+  ial["is-ial-parser<br>v0.8.0"]
+  kramdown["is-kramdown-hooked<br>v0.8.0"]
+  statics["is-static-files<br>v0.8.0"]
+  span["jekyll-is-span<br>(0%)"] --> ial
   span --> kramdown
-  index["jekyll-is-index (0%)"] --> span
-  abbr["jekyll-is-terms (0%)"] --> index
-  images["jekyll-is-images (0%)"] --> ial
+  index["jekyll-is-index<br>(0%)"] --> span
+  abbr["jekyll-is-terms<br>(0%)"] --> index
+  images["jekyll-is-images<br>(0%)"] --> ial
   images --> kramdown
   images --> statics
-  tocs["jekyll-is-tocs (0%)"] --> images
+  tocs["jekyll-is-tocs<br>(0%)"] --> images
   tocs --> index
-  meta["jekyll-is-meta (0%)"] --> images
-  feed["jekyll-is-feed (0%)"] --> meta
-  robots["jekyll-is-robots (0%)"]
-  announcer["jekyll-is-announcer (0%)"] --> statics
-  act-announce["action-announce (0%)"] --> announcer
-  publish["action-jekyll-publish (0%)"] --> act-announce
-  pdf["jekyll-is-pdf (0%)"] --> images
+  meta["jekyll-is-meta<br>(0%)"] --> images
+  feed["jekyll-is-feed<br>(0%)"] --> meta
+  robots["jekyll-is-robots<br>(0%)"]
+  announcer["jekyll-is-announcer<br>(0%)"] --> statics
+  act-announce["action-announce<br>(0%)"] --> announcer
+  publish["action-jekyll-publish<br>(0%)"] --> act-announce
+  pdf["jekyll-is-pdf<br>(0%)"] --> images
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
