@@ -106,5 +106,7 @@ during the Jekyll build process.
 
 *Announcing new blog posts (to Telegram channel).*
 
+`jekyll-is-announcer` is a Ruby gem for Jekyll that automates announcing new blog posts to external services, currently supporting Telegram channels and IndexNow.
+
 
 <!-- ☐ -->
