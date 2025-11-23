@@ -100,7 +100,7 @@ during the Jekyll build process.
 
 ### Announcer
 
-#### ☑ [jekyll-is-announcer](https://github.com/jekyll-is/jekyll-is-announcer)
+#### ✔ [jekyll-is-announcer](https://github.com/jekyll-is/jekyll-is-announcer)
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/jekyll-is-announcer)]([LICENSE](https://github.com/jekyll-is/jekyll-is-announcer/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/jekyll-is-announcer.svg?d=1)](https://badge.fury.io/rb/jekyll-is-announcer)
 
@@ -109,4 +109,4 @@ during the Jekyll build process.
 `jekyll-is-announcer` is a Ruby gem for Jekyll that automates announcing new blog posts to external services, currently supporting Telegram channels and IndexNow.
 
 
-<!-- ☐ -->
+<!-- ☐ ☑ -->
