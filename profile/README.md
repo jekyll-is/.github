@@ -22,6 +22,7 @@ graph RL
   feed["jekyll-is-feed<br>(0%)"] --> meta
   robots["jekyll-is-robots<br>(0%)"]
   announcer["jekyll-is-announcer<br>(0%)"] --> statics
+  announcer --> ial
   act-announce["action-announce<br>(0%)"] --> announcer
   publish["action-jekyll-publish<br>(0%)"] --> act-announce
   pdf["jekyll-is-pdf<br>(0%)"] --> images
