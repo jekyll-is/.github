@@ -50,7 +50,7 @@ classDef blue fill:#DDF
 class ial blue
 class kramdown blue
 class images gray
-class announcer green
+class announcer blue
 class act-announce green
 class publish gray
 class pdf gray
