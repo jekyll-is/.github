@@ -6,8 +6,8 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 
 ```mermaid
 graph RL
-  ial["is-ial-parser<br>v0.8.0"]
   kramdown["is-kramdown-hooked<br>v0.8.0"]
+  ial["is-ial-parser<br>v0.8.0"]
   statics["is-static-files<br>v0.8.0"]
   span["jekyll-is-span<br>(0%)"] --> ial
   span --> kramdown
