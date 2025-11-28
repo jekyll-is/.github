@@ -23,15 +23,13 @@ graph RL
   robots["jekyll-is-robots<br>(0%)"]
   announcer["jekyll-is-announcer<br>v0.8.0"] --> statics
   announcer --> ial
-  act-announce["action-announce<br>(0%)"] --> announcer
-  publish["action-jekyll-publish<br>(0%)"] --> act-announce
+  act-publish["action-jekyll-is-publish<br>v1"]
   pdf["jekyll-is-pdf<br>(0%)"] --> images
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
 click announcer "https://github.com/jekyll-is/jekyll-is-announcer"
-click act-announce "https://github.com/jekyll-is/action-announce"
-click publish "https://github.com/jekyll-is/action-jekyll-publish"
+click act-publish "https://github.com/jekyll-is/action-jekyll-is-publish"
 click images "https://github.com/jekyll-is/jekyll-is-images"
 click robots "https://github.com/jekyll-is/jekyll-is-robots"
 click meta "https://github.com/jekyll-is/jekyll-is-meta"
@@ -51,8 +49,7 @@ class ial blue
 class kramdown blue
 class images gray
 class announcer blue
-class act-announce green
-class publish gray
+class act-publich blue
 class pdf gray
 class span gray
 class index gray
@@ -107,6 +104,14 @@ during the Jekyll build process.
 *Announcing new blog posts (to Telegram channel).*
 
 `jekyll-is-announcer` is a Ruby gem for Jekyll that automates announcing new blog posts to external services, currently supporting Telegram channels and IndexNow.
+
+#### ✔ [action-jekyll-is-publish](https://github.com/jekyll-is/action-jekyll-is-publish)
+[![GitHub License](https://img.shields.io/github/license/jekyll-is/action-jekyll-is-publish)](LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/jekyll-is/action-jekyll-is-publish?logo=github)](https://github.com/jekyll-is/action-jekyll-is-publish/releases/latest)
+
+*Service action for deploy Jekyll site.*
+
+**Jekyll IS Publisher** is a secure, composite GitHub Action for publishing pre-built Jekyll websites (or individual files) to GitHub Pages. It supports full directory synchronization, additional file copying, and optional Telegram notifications with detailed Git change logs.
 
 
 <!-- ☐ ☑ -->
