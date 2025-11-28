@@ -107,7 +107,7 @@ during the Jekyll build process.
 
 #### ✔ [action-jekyll-is-publish](https://github.com/jekyll-is/action-jekyll-is-publish)
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/action-jekyll-is-publish)](LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/jekyll-is/action-jekyll-is-publish?logo=github)](https://github.com/jekyll-is/action-jekyll-is-publish/releases/latest)
+[![GitHub release](https://img.shields.io/github/v/release/jekyll-is/action-jekyll-is-publish)](https://github.com/jekyll-is/action-jekyll-is-publish/releases/latest)
 
 *Service action for deploy Jekyll site.*
 
