@@ -51,7 +51,7 @@ class ial blue
 class kramdown blue
 class images gray
 class announcer blue
-class act-publich blue
+class act-publish blue
 class act-backpush blue
 class pdf gray
 class span gray
