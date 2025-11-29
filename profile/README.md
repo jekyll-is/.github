@@ -24,7 +24,7 @@ graph RL
   announcer["jekyll-is-announcer<br>v0.8.0"] --> statics
   announcer --> ial
   act-publish["action-jekyll-is-publish<br>v1"]
-  act-backpush["action-jekyll-is-backpush<br>(0%)"]
+  act-backpush["action-jekyll-is-backpush<br>v0"]
   pdf["jekyll-is-pdf<br>(0%)"] --> images
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
@@ -52,7 +52,7 @@ class kramdown blue
 class images gray
 class announcer blue
 class act-publich blue
-class act-backpush green
+class act-backpush blue
 class pdf gray
 class span gray
 class index gray
