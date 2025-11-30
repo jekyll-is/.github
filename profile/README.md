@@ -109,11 +109,23 @@ during the Jekyll build process.
 `jekyll-is-announcer` is a Ruby gem for Jekyll that automates announcing new blog posts to external services, currently supporting Telegram channels and IndexNow.
 
 #### ✔ [action-jekyll-is-publish](https://github.com/jekyll-is/action-jekyll-is-publish)
-[![GitHub License](https://img.shields.io/github/license/jekyll-is/action-jekyll-is-publish)](LICENSE)
+[![GitHub License](https://img.shields.io/github/license/jekyll-is/action-jekyll-is-publish)](https://github.com/jekyll-is/action-jekyll-is-publish/blob/main/LICENSE)
 [![GitHub release](https://img.shields.io/github/v/release/jekyll-is/action-jekyll-is-publish)](https://github.com/jekyll-is/action-jekyll-is-publish/releases/latest)
 
 *Service action for deploy Jekyll site.*
 
-`action-jekyll-is-publish` is a secure, composite GitHub Action for publishing pre-built Jekyll websites (or individual files) to GitHub Pages. It supports full directory synchronization, additional file copying, and optional Telegram notifications with detailed Git change logs.
+`action-jekyll-is-publish` is a secure, composite GitHub Action for publishing pre-built Jekyll websites (or individual files) to GitHub Pages. It supports full directory 
+synchronization, additional file copying, and optional Telegram notifications with detailed Git change logs.
+
+#### ✔ [action-jekyll-is-backpush](https://github.com/jekyll-is/action-jekyll-is-backpush)
+[![GitHub License](https://img.shields.io/github/license/jekyll-is/action-jekyll-is-backpush)](https://github.com/jekyll-is/action-jekyll-is-backpush/blob/main/LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/jekyll-is/action-jekyll-is-backpush)](https://github.com/jekyll-is/action-jekyll-is-backpush/releases/latest)
+
+*Service action for return changes after build to repo.*
+
+`action-jekyll-is-backpush` is a composite GitHub Action to commit and push changes back to repository after Jekyll build or other generation steps. Includes optional 
+Telegram notifications with git diff summary. Uses `github-actions[bot]` for traceable commits.
+
+
 
 
