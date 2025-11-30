@@ -64,7 +64,7 @@ class abbr gray
 class statics blue
 ```
 
-## Gems
+## Gems & Actions
 
 ### Background utilities (not a plugins)
 
