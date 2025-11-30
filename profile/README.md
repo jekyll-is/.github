@@ -9,13 +9,13 @@ graph RL
   kramdown["is-kramdown-hooked<br>v0.8.0"]
   ial["is-ial-parser<br>v0.8.0"]
   statics["is-static-files<br>v0.8.0"]
-  span["jekyll-is-span<br>(0%)"] --> ial
-  span --> kramdown
-  index["jekyll-is-index<br>(0%)"] --> span
-  abbr["jekyll-is-terms<br>(0%)"] --> index
+  span["jekyll-is-span<br>(0%)"] --> kramdown
+  span --> ial
   images["jekyll-is-images<br>(0%)"] --> ial
   images --> kramdown
   images --> statics
+  index["jekyll-is-index<br>(0%)"] --> span
+  abbr["jekyll-is-terms<br>(0%)"] --> index
   tocs["jekyll-is-tocs<br>(0%)"] --> images
   tocs --> index
   meta["jekyll-is-meta<br>(0%)"] --> images
