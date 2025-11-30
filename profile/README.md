@@ -23,9 +23,11 @@ graph RL
   robots["jekyll-is-robots<br>(0%)"]
   announcer["jekyll-is-announcer<br>v0.8.0"] --> statics
   announcer --> ial
+  pdf["jekyll-is-pdf<br>(0%)"] --> images
   act-publish["action-jekyll-is-publish<br>v1"]
   act-backpush["action-jekyll-is-backpush<br>v1"]
-  pdf["jekyll-is-pdf<br>(0%)"] --> images
+  announcer -.- act-publish
+  announcer -.- act-backpush
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
