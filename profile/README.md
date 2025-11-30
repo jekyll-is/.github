@@ -24,7 +24,7 @@ graph RL
   announcer["jekyll-is-announcer<br>v0.8.0"] --> statics
   announcer --> ial
   act-publish["action-jekyll-is-publish<br>v1"]
-  act-backpush["action-jekyll-is-backpush<br>v0"]
+  act-backpush["action-jekyll-is-backpush<br>v1"]
   pdf["jekyll-is-pdf<br>(0%)"] --> images
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
