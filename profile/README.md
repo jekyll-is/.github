@@ -7,7 +7,7 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 ```mermaid
 graph RL
   kramdown["is-kramdown-hooked<br>v0.8.0"]
-  ial["is-ial-parser<br>v0.8.0"]
+  ial["is-ial-parser<br>v0.8.1"]
   statics["is-static-files<br>v0.8.0"]
   span["jekyll-is-span<br>(0%)"] --> kramdown
   span --> ial
@@ -72,7 +72,7 @@ class statics blue
 
 #### ✔ [is-ial-parser](https://github.com/jekyll-is/is-ial-parser) 
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-ial-parser)]([LICENSE](https://github.com/jekyll-is/is-ial-parser/blob/main/LICENSE)) 
-[![Gem Version](https://badge.fury.io/rb/is-ial-parser.svg)](https://badge.fury.io/rb/is-ial-parser)
+[![Gem Version](https://badge.fury.io/rb/is-ial-parser.svg?d=1)](https://badge.fury.io/rb/is-ial-parser)
 
 *Universal Inline Attribute List (IAL) parser for Kramdown and Jekyll plugins.*
 
