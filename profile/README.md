@@ -13,9 +13,8 @@ graph RL
   reset["is-module-reset"]
   span["jekyll-is-span<br>(0%)"] --> kramdown
   span --> ial
-  images["jekyll-is-images<br>(in progress)"]
+  images["jekyll-is-images<br>(in progress)"] --> hookdown
   images --> statics
-  images --> hookdown
   index["jekyll-is-index<br>(0%)"] --> span
   abbr["jekyll-is-terms<br>(0%)"] --> index
   tocs["jekyll-is-tocs<br>(0%)"] --> images
@@ -28,8 +27,8 @@ graph RL
   pdf["jekyll-is-pdf<br>(0%)"] --> images
   act-publish["action-jekyll-is-publish<br>v1"]
   act-backpush["action-jekyll-is-backpush<br>v1"]
-  announcer -.- act-publish
-  announcer -.- act-backpush
+  announcer -.-> act-publish
+  announcer -.-> act-backpush
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
