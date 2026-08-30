@@ -7,13 +7,16 @@ Modular extensions for Jekyll: HTML + LaTeX, without double parsing, through AST
 ```mermaid
 graph RL
   kramdown["is-kramdown-hooked<br>v0.8.0"]
+  hookdown["jekyll-is-hookdown<br>v0.8"]
   ial["is-ial-parser<br>v0.8.1"]
   statics["is-static-files<br>v0.8.0"]
+  reset["is-module-reset"]
   span["jekyll-is-span<br>(0%)"] --> kramdown
   span --> ial
-  images["jekyll-is-images<br>(0%)"] --> ial
+  images["jekyll-is-images<br>(in progress)"] --> ial
   images --> kramdown
   images --> statics
+  images --> hookdown
   index["jekyll-is-index<br>(0%)"] --> span
   abbr["jekyll-is-terms<br>(0%)"] --> index
   tocs["jekyll-is-tocs<br>(0%)"] --> images
@@ -28,9 +31,15 @@ graph RL
   act-backpush["action-jekyll-is-backpush<br>v1"]
   announcer -.- act-publish
   announcer -.- act-backpush
+  hookdown --> kramdown
+  reset -.-> kramdown
+  reset -.-> ial
+  reset -.-> statics
 
 click ial "https://github.com/jekyll-is/is-ial-parser"
 click kramdown "https://github.com/jekyll-is/is-kramdown-hooked"
+click hookdown "https://github.com/jekyll-is/jekyll-is-hookdown"
+click reset "https://github.com/jekyll-is/is-module-reset"
 click announcer "https://github.com/jekyll-is/jekyll-is-announcer"
 click act-publish "https://github.com/jekyll-is/action-jekyll-is-publish"
 click act-backpush "https://github.com/jekyll-is/action-jekyll-is-backpush"
@@ -51,10 +60,12 @@ classDef blue fill:#DDF
 
 class ial blue
 class kramdown blue
-class images gray
+class hookdown blue
+class statics blue
 class announcer blue
 class act-publish blue
 class act-backpush blue
+class images gray
 class pdf gray
 class span gray
 class index gray
@@ -63,7 +74,7 @@ class meta gray
 class robots gray
 class tocs gray
 class abbr gray
-class statics blue
+class reset gray
 ```
 
 ## Gems & Actions
@@ -90,6 +101,12 @@ classes, IDs, and custom extensions.
 to inject custom processing steps on the Abstract Syntax Tree (AST) after the default parsing, allowing for advanced Markdown manipulation and seamless integration 
 into Jekyll sites or other Ruby projects using Kramdown.
 
+#### ✔ [jekyll-is-hookdown](https://github.com/jekyll-is/jekyll-is-hookdown)
+[![GitHub License](https://img.shields.io/github/license/jekyll-is/jekyll-is-hookdown)](https://github.com/jekyll-is/jekyll-is-hookdown/blob/main/LICENSE)
+[![Gem Version](https://badge.fury.io/rb/jekyll-is-hookdown.svg)](https://badge.fury.io/rb/jekyll-is-hookdown)
+
+*Hooked Kramdown for Jekyll — convenient Jekyll plugin layer over is-kramdown-hooked with element-level hooks.*
+
 #### ✔ [is-static-files](https://github.com/jekyll-is/is-static-files)
 [![GitHub License](https://img.shields.io/github/license/jekyll-is/is-static-files)]([LICENSE](https://github.com/jekyll-is/is-static-files/blob/main/LICENSE))
 [![Gem Version](https://badge.fury.io/rb/is-static-files.svg)](https://badge.fury.io/rb/is-static-files)
@@ -99,6 +116,10 @@ into Jekyll sites or other Ruby projects using Kramdown.
 `is-static-files` is a Ruby gem that extends Jekyll's static file handling capabilities by providing a custom `StaticFile` class. It allows you to manage static files 
 that either come from a source file or from dynamic content held directly in memory. This flexibility enables programmatically generating or modifying static file content 
 during the Jekyll build process.
+
+#### [is-module-reset](https://github.com/jekyll-is/is-module-reset)
+
+Utility for resetting / managing module state (new).
 
 ### Announcer
 
